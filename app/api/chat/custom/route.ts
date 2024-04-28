@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Database } from "@/supabase/types"
 import { ChatSettings } from "@/types"
 import { createClient } from "@supabase/supabase-js"
@@ -50,7 +51,7 @@ export async function POST(request: Request) {
     // const stream = OpenAIStream(response)
 
     const userInput = messages[messages.length - 1].content.toLowerCase().trim()
-    console.log({ userInput, m: hardcodedMessages[userInput] })
+    // console.log({ userInput, m: hardcodedMessages[userInput] })
 
     const message =
       hardcodedMessages[userInput] ?? "I'm sorry, I don't understand that."
