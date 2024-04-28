@@ -387,7 +387,7 @@ export const useChatHandler = () => {
       setIsGenerating(false)
       setFirstTokenReceived(false)
       setUserInput(startingInput)
-      alert(error?.message)
+      // alert(error?.message)
     }
   }
 
