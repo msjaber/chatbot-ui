@@ -61,6 +61,7 @@ export const ChatSettings: FC<ChatSettingsProps> = ({}) => {
     ...availableLocalModels,
     ...availableOpenRouterModels
   ]
+  console.log({ allModels })
 
   const fullModel = allModels.find(llm => llm.modelId === chatSettings.model)
 

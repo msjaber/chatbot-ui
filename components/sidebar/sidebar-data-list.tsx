@@ -66,21 +66,21 @@ export const SidebarDataList: FC<SidebarDataListProps> = ({
       case "files":
         return <FileItem key={item.id} file={item as Tables<"files">} />
 
-      case "collections":
-        return (
-          <CollectionItem
-            key={item.id}
-            collection={item as Tables<"collections">}
-          />
-        )
+      // case "collections":
+      //   return (
+      //     <CollectionItem
+      //       key={item.id}
+      //       collection={item as Tables<"collections">}
+      //     />
+      //   )
 
-      case "assistants":
-        return (
-          <AssistantItem
-            key={item.id}
-            assistant={item as Tables<"assistants">}
-          />
-        )
+      // case "assistants":
+      //   return (
+      //     <AssistantItem
+      //       key={item.id}
+      //       assistant={item as Tables<"assistants">}
+      //     />
+      //   )
 
       case "tools":
         return <ToolItem key={item.id} tool={item as Tables<"tools">} />

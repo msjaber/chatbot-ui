@@ -334,9 +334,9 @@ export const ProfileSettings: FC<ProfileSettingsProps> = ({}) => {
           </SheetHeader>
 
           <Tabs defaultValue="profile">
-            <TabsList className="mt-4 grid w-full grid-cols-2">
+            <TabsList className="mt-4 grid w-full grid-cols-1">
               <TabsTrigger value="profile">Profile</TabsTrigger>
-              <TabsTrigger value="keys">API Keys</TabsTrigger>
+              {/* <TabsTrigger value="keys">API Keys</TabsTrigger> */}
             </TabsList>
 
             <TabsContent className="mt-4 space-y-4" value="profile">
@@ -387,7 +387,7 @@ export const ProfileSettings: FC<ProfileSettingsProps> = ({}) => {
                 />
               </div>
 
-              <div className="space-y-1">
+              {/* <div className="space-y-1">
                 <Label>Profile Image</Label>
 
                 <ImagePicker
@@ -398,7 +398,7 @@ export const ProfileSettings: FC<ProfileSettingsProps> = ({}) => {
                   onSrcChange={setProfileImageSrc}
                   onImageChange={setProfileImageFile}
                 />
-              </div>
+              </div> */}
 
               <div className="space-y-1">
                 <Label>Chat Display Name</Label>
@@ -731,7 +731,7 @@ export const ProfileSettings: FC<ProfileSettingsProps> = ({}) => {
           <div className="flex items-center space-x-1">
             <ThemeSwitcher />
 
-            <WithTooltip
+            {/* <WithTooltip
               display={
                 <div>
                   Download Chatbot UI 1.0 data as JSON. Import coming soon!
@@ -744,7 +744,7 @@ export const ProfileSettings: FC<ProfileSettingsProps> = ({}) => {
                   onClick={exportLocalStorageAsJSON}
                 />
               }
-            />
+            /> */}
           </div>
 
           <div className="ml-auto space-x-2">
